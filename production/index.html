@@ -56,11 +56,11 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active dropdown">
-                                <a href="home-master.html" >Home</a> 
+                                <a href="index.html" >Home</a> 
                                 <!--class="dropdown-toggle js-activated" data-toggle="dropdown"-->
                                 <!--<ul class="dropdown-menu">
                                     <li><a href="index.html">Home - Default</a></li>
-                                    <li><a href="home-master.html">Home - Master Slider <span class="badge">Hot</span></a></li>
+                                    <li><a href="index.html">Home - Master Slider <span class="badge">Hot</span></a></li>
                                     <li><a href="home-animation.html">Home - Animations</a></li>
                                     <li><a href="home-boxed.html">Home boxed</a></li><li><a href="home-onepage.html">One Page</a></li>
                                     <li class="dropdown-submenu">
@@ -194,20 +194,7 @@
                         data-duration="3000"
                         data-delay="2000"
                         data-ease="easeOutExpo">High Quality and Functional Design</h5>
-                    <a class="ms-layer btn1 slide-btn uppercase" href="#"
-                       style="left: 550px; top:340px;"
-                       data-type="text"
-                       data-delay="3000"
-                       data-ease="easeOutExpo"
-                       data-duration="2500"
-                       data-effect="scale(1.5,1.6)"> Learn More <i class="fa fa-angle-right"></i> </a> 
-                    <a class="ms-layer btn2 slide-btn uppercase" href="#"
-                       style="left:700px; top:340px;"
-                       data-type="text"
-                       data-delay="3200"
-                       data-ease="easeOutExpo"
-                       data-duration="2800"
-                       data-effect="scale(1.5,1.6)"> Purchase Now! <i class="fa fa-angle-right"></i></a> </div>
+                     </div>
                 <!-- end of slide --> 
 
               <!-- slide 2 -->
@@ -230,20 +217,7 @@
                         data-duration="3000"
                         data-delay="2000"
                         data-ease="easeOutExpo">Simple and Elegant Design For Your Next Project</h5>
-                    <a class="ms-layer btn1 slide-btn uppercase" href="#"
-                       style="left: 550px; top:340px;"
-                       data-type="text"
-                       data-delay="3000"
-                       data-ease="easeOutExpo"
-                       data-duration="2500"
-                       data-effect="scale(1.5,1.6)"> Learn More <i class="fa fa-angle-right"></i> </a> 
-                    <a class="ms-layer btn2 slide-btn uppercase" href="#"
-                       style="left:700px; top:340px;"
-                       data-type="text"
-                       data-delay="3200"
-                       data-ease="easeOutExpo"
-                       data-duration="2800"
-                       data-effect="scale(1.5,1.6)"> Purchase Now! <i class="fa fa-angle-right"></i></a> </div>
+                     </div>
                 <!-- end of slide --> 
 
               <!-- slide 2 -->
@@ -266,20 +240,7 @@
                         data-duration="3000"
                         data-delay="2000"
                         data-ease="easeOutExpo">We Work With Both Small and Big Buisnesses</h5>
-                    <a class="ms-layer btn1 slide-btn uppercase" href="#"
-                       style="left: 550px; top:340px;"
-                       data-type="text"
-                       data-delay="3000"
-                       data-ease="easeOutExpo"
-                       data-duration="2500"
-                       data-effect="scale(1.5,1.6)"> Learn More <i class="fa fa-angle-right"></i> </a> 
-                    <a class="ms-layer btn2 slide-btn uppercase" href="#"
-                       style="left:700px; top:340px;"
-                       data-type="text"
-                       data-delay="3200"
-                       data-ease="easeOutExpo"
-                       data-duration="2800"
-                       data-effect="scale(1.5,1.6)"> Purchase Now! <i class="fa fa-angle-right"></i></a> </div>
+                    <</div>
                 <!-- end of slide --> 
             </div>
             <!-- end Master Slider -->
@@ -743,25 +704,28 @@
                             </ul>
                         </div>
                     </div><!--latest post col end-->
-                    <div class="col-md-6">
+                     <div class="col-md-6">
                         <div class="footer-col">
                             <h3>Get in touch</h3>
-                            <form>
+                            <form action="mailto:justinsweng@gmail.com" >
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Name...">
+                                        <input type="text" name="name" class="form-control" placeholder="Name...">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Email...">
+                                        <input type="email" name="email" class="form-control" placeholder="Email..." required data-validation-required-message="Please enter your email address.">
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" placeholder="Subject...">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject..." required data-validation-required-message="Please enter email subject">
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea class="form-control" placeholder="Massage..." rows="7"></textarea>
+                                        <textarea class="form-control" name="body"  placeholder="Massage..." rows="7" required data-validation-required-message="Please enter your message."></textarea>
+                                        
                                     </div>
+                                    <script> // i have to figure out how to make the emails sent over to this email is inhtml code and stakes ther name at the end
+                                    //document.forms.email.body.value =  document.forms.email.name.value + document.forms.email.body.value;</script>
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-lg btn-white">Send massege</button>
+                                        <button type="submit" class="btn btn-lg btn-white" >Send massege</button>
                                     </div>
                                 </div>
                             </form>

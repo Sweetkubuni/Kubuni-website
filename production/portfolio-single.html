@@ -48,17 +48,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="home-master.html"><img src="assets/img/newlogo.png" class="img-responsive" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/newlogo.png" class="img-responsive" alt=""></a>
                     </div>
                     <div class="navbar-collapse collapse">
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active dropdown">
-                                <a href="home-master.html" >Home</a> 
+                                <a href="index.html" >Home</a> 
                                 <!--class="dropdown-toggle js-activated" data-toggle="dropdown"-->
                                 <!--<ul class="dropdown-menu">
-                                    <li><a href="home-master.html">Home - Default</a></li>
-                                    <li><a href="home-master.html">Home - Master Slider <span class="badge">Hot</span></a></li>
+                                    <li><a href="index.html">Home - Default</a></li>
+                                    <li><a href="index.html">Home - Master Slider <span class="badge">Hot</span></a></li>
                                     <li><a href="home-animation.html">Home - Animations</a></li>
                                     <li><a href="home-boxed.html">Home boxed</a></li><li><a href="home-onepage.html">One Page</a></li>
                                     <li class="dropdown-submenu">
@@ -274,25 +274,28 @@
                             </ul>
                         </div>
                     </div><!--latest post col end-->
-                    <div class="col-md-6">
+                     <div class="col-md-6">
                         <div class="footer-col">
                             <h3>Get in touch</h3>
-                            <form>
+                            <form action="mailto:justinsweng@gmail.com" >
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Name...">
+                                        <input type="text" name="name" class="form-control" placeholder="Name...">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Email...">
+                                        <input type="email" name="email" class="form-control" placeholder="Email..." required data-validation-required-message="Please enter your email address.">
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" placeholder="Subject...">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject..." required data-validation-required-message="Please enter email subject">
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea class="form-control" placeholder="Massage..." rows="7"></textarea>
+                                        <textarea class="form-control" name="body"  placeholder="Massage..." rows="7" required data-validation-required-message="Please enter your message."></textarea>
+                                        
                                     </div>
+                                    <script> // i have to figure out how to make the emails sent over to this email is inhtml code and stakes ther name at the end
+                                    //document.forms.email.body.value =  document.forms.email.name.value + document.forms.email.body.value;</script>
                                     <div class="col-md-12 text-right">
-                                        <button type="submit" class="btn btn-lg btn-white">Send massege</button>
+                                        <button type="submit" class="btn btn-lg btn-white" >Send massege</button>
                                     </div>
                                 </div>
                             </form>
@@ -302,7 +305,7 @@
                 <div class="space-70"></div>
                 <div class="row">
                     <div class="col-md-12 text-center footer-bottom">
-                        <a href="home-master.html"> <img src="assets/img/newlogo.png"  alt=""></a>
+                        <a href="index.html"> <img src="assets/img/newlogo.png"  alt=""></a>
                         <div class="space-20"></div>
                         <span>&copy;2016.all right resrved.Design by design_mylife</span>
                     </div>
